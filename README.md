@@ -39,6 +39,7 @@ As the GUI seems not to work for many things, including settings (and also Keybo
 
 At Terminal I think it is important to ask for “Run command as a login shell”.
 
+```bash
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'br'), ('xkb', 'dk')]"
 gsettings set org.gnome.desktop.screensaver lock-enabled false
 gsettings set org.gnome.desktop.session idle-delay 0
@@ -48,3 +49,4 @@ gsettings set org.gnome.desktop.interface clock-show-seconds true
 gsettings set org.gnome.desktop.calendar show-weekdate true
 
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
+```
