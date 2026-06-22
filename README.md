@@ -29,3 +29,22 @@ Section "Screen"
 
 EndSection
 
+
+
+GNOME at OpenBSD 7.9
+As the GUI seems not to work for many things, including settings (and also Keyboard settings), here are some commands to change settings
+
+
+
+
+At Terminal I think it is important to ask for “Run command as a login shell”.
+
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'br'), ('xkb', 'dk')]"
+gsettings set org.gnome.desktop.screensaver lock-enabled false
+gsettings set org.gnome.desktop.session idle-delay 0
+gsettings set org.gnome.desktop.interface clock-format '24h'
+gsettings set org.gnome.desktop.interface clock-show-weekday true
+gsettings set org.gnome.desktop.interface clock-show-seconds true
+gsettings set org.gnome.desktop.calendar show-weekdate true
+
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
